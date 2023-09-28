@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        height: 100px;
+        width: 200px;
+        background-color: blueviolet;
+        border-radius: 15%;
+        animation-name: ani;
+        animation-duration: 5s;
+        animation-iteration-count: 2;
+        position: relative;
+        display: inline-block;
+
+       
+        /* display: inline-block ; */
+    }
+    @keyframes ani {
+        0%{
+            color: red;
+            top: 0; 
+            left: 0;
+            transform: rotate(0deg);
+            
+        }
+        25%{
+            color: purple;
+            transform: rotate(90deg);
+            top: 20px;
+            left: 1200px;
+        }
+        50%{
+            left: 1200px;
+            top: 600px;
+            transform: rotate(180deg);
+
+        }
+        75%{
+            left: 0px;
+            top: 600px;
+            transform: rotate(360deg);
+        }
+        100%{
+            left: 0px;
+            top: 0px;
+            transform: rotate(180deg);
+        }
+
+
+    }
+    
+
+</style>
+<body>
+    <section></section>
+</body>
+</html>

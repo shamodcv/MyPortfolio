@@ -26,6 +26,7 @@
     indexing and ranking when duplicate or similar
     content exists-->
     <link rel="stylesheet" href="style.css">
+    <script src="st.js"></script>
     <link rel="stylesheet" href="assets/css/8.0.1_normalize.css">
 
 </head>
@@ -39,19 +40,19 @@
         <nav class="line">
             <!-- <menu> -->
             <ul>
-                <li>HOME</li>
-                <li>ABOUT ME</li>
-                <li>SKILLS</li>
-                <li>PROJECTS</li>
-                <li>GALLERY</li>
-                <li>CONTACT</li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#project">PROJECTS</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
             <!-- </menu> -->
         </nav>
     </header>
     <main>
         <section>
-            <section class="home">
+            <section id="home" class="home">
                 <h3 class="greeting">Welcome to my Site</h3>
                 <h1 class="Nameline"><span class="hi">Hi!</span> I’m Shamod Dilanka.</h1>
                 <h1 class="title">Full Stack <span class="developer">Developer</span></h1>
@@ -62,7 +63,8 @@
                     I'm eager to collaborate on exciting ventures. Let's create 
                     something amazing together! Enjoy exploring my work!
                 </pre>
-                <button class="probutton" type="navigation" formaction="Message">See my project</button>
+                <button class="probutton" type="navigation" formaction="Message"><a href="#project">See my
+                        project</a></button>
             </section>
             <aside class="proimg1">
                 <img width="420" src="assets/images/Rectangle 2.svg" alt="This is a gif image">
@@ -74,11 +76,13 @@
                 <img width="420" src="assets/images/profile.svg" alt="This is a gif image">
             </aside>
 
-            <div class="section-line"></div>
+            <div class="section-line">
+                <img class="sline" src="assets/images/Sline.svg" alt="This is a gif image">
+            </div>
 
         </section>
 
-        <section class="about">
+        <section id="about" class="about">
             <aside class="abimg1">
                 <img width="370" src="assets/images/Rectangle 6.svg" alt="This is a gif image">
             </aside>
@@ -107,9 +111,16 @@
                 </pre>
                 </section>
             </aside>
+            <div class="section-line">
+                <img class="sline" src="assets/images/Sline.svg" alt="This is a gif image">
+            </div>
+
+            <div class="abtitle-line">
+                <img class="abrline" src="assets/images/Rline.svg" alt="This is a gif image">
+            </div>
         </section>
 
-        <section class="education">
+        <section id="education" class="education">
             <h2 class="edutitle">EDUCATION</h2>
             <section>
                 <div class="chart">
@@ -120,96 +131,187 @@
                 <h1 class="edu3">IJSE(Institute of java software engineering)</h1>
                 <h1 class="edu4">graduate diploma in software engineering</h1>
             </section>
+            <div class="section-line">
+                <img class="sline" src="assets/images/Sline.svg" alt="This is a gif image">
+            </div>
+
+            <div class="etitle-line">
+                <img class="erline1" src="assets/images/Rline.svg" alt="This is a gif image">
+                <img class="erline2" src="assets/images/Rline.svg" alt="This is a gif image">
+            </div>
         </section>
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <h2 class="skilltitle">SKILLS</h2>
-            <section class="skslide-wrapper">
-                <section class="skslide">
+            <section class="site">
+                <section class="skslide-wrapper">
+                    <section class="skslide">
 
-                    <div class="sitem">
-                        <img width="150" src="assets/images/Java.png" alt="This is a gif image">
-                    </div>
-                    <div class="sitem">
-                        <img width="150" src="assets/images/JS.png" alt="This is a gif image">
-                    </div>
-                    <div class="sitem">
-                        <img width="150" src="assets/images/HTML.png" alt="This is a gif image">
-                    </div>
-                    <div class="sitem">
-                        <img width="150" src="assets/images/CSS.png" alt="This is a gif image">
-                    </div>
-                    <div class="sitem">
-                        <img width="150" src="assets/images/MYSQL.png" alt="This is a gif image">
-                    </div>
-                    <div class="sitem">
-                        <img width="150" src="assets/images/Python.png" alt="This is a gif image">
-                    </div>
-                    <div class="sitem">
-                        <img width="150" src="assets/images/figma.png" alt="This is a gif image">
-                    </div>
-                    <div class="sitem">
-                        <img width="150" src="assets/images/Ps.png" alt="This is a gif image">
-                    </div>
-                    <div class="sitem">
-                        <img width="150" src="assets/images/Ai.png" alt="This is a gif image">
-                    </div>
-                    <div class="sitem">
-                        <img width="150" src="assets/images/GIT (2).png" alt="This is a gif image">
-                    </div>
-                    <div class="sitem">
-                        <img width="150" src="assets/images/Ae.png" alt="This is a gif image">
-                    </div>
-                    <div class="sitem">
-                        <img width="150" src="assets/images/Un.png" alt="This is a gif image">
-                    </div>
+                        <div class="sitem">
+                            <img class="simg" width="150" src="assets/images/Java.png" alt="This is a gif image">
+                        </div>
+                        <div class="sitem">
+                            <img class="simg" width="150" src="assets/images/JS.png" alt="This is a gif image">
+                        </div>
+                        <div class="sitem">
+                            <img class="simg" width="150" src="assets/images/HTML.png" alt="This is a gif image">
+                        </div>
+                        <div class="sitem">
+                            <img class="simg" width="150" src="assets/images/CSS.png" alt="This is a gif image">
+                        </div>
+                        <div class="sitem">
+                            <img class="simg" width="150" src="assets/images/MYSQL.png" alt="This is a gif image">
+                        </div>
+                        <div class="sitem">
+                            <img class="simg" width="150" src="assets/images/Python.png" alt="This is a gif image">
+                        </div>
+                        <div class="sitem">
+                            <img class="simg" width="150" src="assets/images/figma.png" alt="This is a gif image">
+                        </div>
+                        <div class="sitem">
+                            <img class="simg" width="150" src="assets/images/Ps.png" alt="This is a gif image">
+                        </div>
+                        <div class="sitem">
+                            <img class="simg" width="150" src="assets/images/Ai.png" alt="This is a gif image">
+                        </div>
+                        <div class="sitem">
+                            <img class="simg" width="150" src="assets/images/GIT (2).png" alt="This is a gif image">
+                        </div>
+                        <div class="sitem">
+                            <img class="simg" width="150" src="assets/images/Ae.png" alt="This is a gif image">
+                        </div>
+                        <div class="sitem">
+                            <img class="simg" width="150" src="assets/images/Un.png" alt="This is a gif image">
+                        </div>
+
+                    </section>
                 </section>
             </section>
+            <div class="section-line">
+                <img class="sline" src="assets/images/Sline.svg" alt="This is a gif image">
+            </div>
+            <div class="stitle-line">
+                <img class="srline1" src="assets/images/Rline.svg" alt="This is a gif image">
+                <img class="srline2" src="assets/images/Rline.svg" alt="This is a gif image">
+            </div>
         </section>
 
-        <section class="project">
+        <section id="project" class="project">
             <h2 class="projecttitle">PROJECTS</h2>
             <section class="proslide-wrapper">
                 <section class="proslide">
                     <div class="pitem">
+                        <!-- <img class="pimg" src="assets/images/Screenshot (240).png" alt=""> -->
+                        <div class="ho" id="ho1">
+                            <a class="ve" id="ve1" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                                <h1 id="h1">view</h1>
+                            </a>
+                        </div>
 
                     </div>
                     <div class="pitem">
+                        <!-- <img class="pimg" src="assets/images/Screenshot (240).png" alt=""> -->
+                        <div class="ho" id="ho1">
+                            <a class="ve" id="ve1" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                                <h1 id="h1">view</h1>
+                            </a>
+                        </div>
 
                     </div>
                     <div class="pitem">
+                        <!-- <img class="pimg" src="assets/images/Screenshot (240).png" alt=""> -->
+                        <div class="ho" id="ho1">
+                            <a class="ve" id="ve1" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                                <h1 id="h1">view</h1>
+                            </a>
+                        </div>
 
                     </div>
                     <div class="pitem">
+                        <!-- <img class="pimg" src="assets/images/Screenshot (240).png" alt=""> -->
+                        <div class="ho" id="ho1">
+                            <a class="ve" id="ve1" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                                <h1 id="h1">view</h1>
+                            </a>
+                        </div>
 
                     </div>
                     <div class="pitem">
+                        <!-- <img class="pimg" src="assets/images/Screenshot (240).png" alt=""> -->
+                        <div class="ho" id="ho1">
+                            <a class="ve" id="ve1" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                                <h1 id="h1">view</h1>
+                            </a>
+                        </div>
 
                     </div>
                     <div class="pitem">
+                        <!-- <img class="pimg" src="assets/images/Screenshot (240).png" alt=""> -->
+                        <div class="ho" id="ho1">
+                            <a class="ve" id="ve1" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                                <h1 id="h1">view</h1>
+                            </a>
+                        </div>
 
                     </div>
                 </section>
             </section>
+            <div class="section-line">
+                <img class="sline" src="assets/images/Sline.svg" alt="This is a gif image">
+            </div>
+            <div class="ptitle-line">
+                <img class="prline1" src="assets/images/Rline.svg" alt="This is a gif image">
+                <img class="prline2" src="assets/images/Rline.svg" alt="This is a gif image">
+            </div>
         </section>
 
-        <section class="assigment">
+        <section id="assigment" class="assigment">
             <h2 class="assigmenttitle">ASSIGMENTS</h2>
             <section class="assigment-wrapper">
                 <section class="asgslide">
                     <div class="asgitem">
+                        <img class="asimg" src="assets/images/gif/assingment1.gif" alt="">
+                        <div class="asho">
+                            <a class="aslink" href="assignment/css/case4/index.html" target="_blank">
+                                <h1 id="ash1">view</h1>
+                            </a>
+                        </div>
 
                     </div>
                     <div class="asgitem">
+                        <img class="asimg" src="assets/images/gif/assingment2.gif" alt="">
+                        <div class="asho">
+                            <a class="aslink" href="assignment/transition/case1/index.html" target="_blank">
+                                <h1 id="ash1">view</h1>
+                            </a>
+                        </div>
 
                     </div>
                     <div class="asgitem">
+                        <img class="asimg" src="assets/images/gif/assingment3.gif" alt="">
+                        <div class="asho">
+                            <a class="aslink" href="assignment/transition/case2/index.html" target="_blank">
+                                <h1 id="ash1">view</h1>
+                            </a>
+                        </div>
 
                     </div>
                     <div class="asgitem">
+                        <img class="asimg" src="assets/images/gif/assingment4.gif" alt="">
+                        <div class="asho">
+                            <a class="aslink" href="assignment/transition/case3/index.html" target="_blank">
+                                <h1 id="ash1">view</h1>
+                            </a>
+                        </div>
 
                     </div>
                     <div class="asgitem">
+                        <img class="asimg" src="assets/images/gif/assingment5.gif" alt="">
+                        <div class="asho">
+                            <a class="aslink" href="assignment/transition/case4/index.html" target="_blank">
+                                <h1 id="ash1">view</h1>
+                            </a>
+                        </div>
 
                     </div>
                     <div class="asgitem">
@@ -218,20 +320,50 @@
 
                 </section>
             </section>
+            <div class="section-line">
+                <img class="sline" src="assets/images/Sline.svg" alt="This is a gif image">
+            </div>
+            <div class="astitle-line">
+                <img class="asrline1" src="assets/images/Rline.svg" alt="This is a gif image">
+                <img class="asrline2" src="assets/images/Rline.svg" alt="This is a gif image">
+            </div>
         </section>
 
-        <section class="gallery">
+        <section id="gallery" class="gallery">
             <h2 class="gallerytitle">GALLERY</h2>
-            <section class="galleryset">
-                <img width="400" src="assets/images/ryland-dean-6k6N8HTrXyE-unsplash.jpg" alt="This is a gif image">
-                <img width="300" src="assets/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="This is a gif image">
-                <img width="250" src="assets/images/nrd-c3tNiAb098I-unsplash.jpg" alt="This is a gif image">
-
+        <section class="gasite">
+            <section class="gallery-wrapper">
+                <div class="gallery-slideshow">
+                    <div class="gaitem">
+                        <img width="400" src="assets/images/ryland-dean-6k6N8HTrXyE-unsplash.jpg" alt="Image 1">
+                    </div>
+                    <div class="gaitem">
+                        <img width="400"  height="300" src="assets/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="Image 2">
+                    </div>
+                    <div class="gaitem">
+                        <img width="300" height="400" src="assets/images/nrd-c3tNiAb098I-unsplash.jpg" alt="Image 3">
+                    </div>
+                    <div class="gaitem">
+                        <img width="400" src="assets/images/ryland-dean-6k6N8HTrXyE-unsplash.jpg" alt="Image 4">
+                    </div>
+                    <div class="gaitem">
+                        <img width="300" src="assets/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="Image 5">
+                    </div>
+                </div>
             </section>
         </section>
+        <div class="section-line">
+            <img class="sline" src="assets/images/Sline.svg" alt="This is a gif image">
+        </div>
+        <div class="gatitle-line">
+            <img class="garline1" src="assets/images/Rline.svg" alt="This is a gif image">
+            <img class="garline2" src="assets/images/Rline.svg" alt="This is a gif image">
+        </div>
+    </section>
+        
 
     </main>
-    <footer>
+    <footer id="contact">
         <div class="footer-container">
             <section class="contact">
                 <h2 class="contacttitle">CONTACT ME</h2>
@@ -254,8 +386,8 @@
                     <form action="hiiiii">
                         <fieldset>
                             <input name="FName" id="FName" type="text" placeholder="Enter your name" required>
-                            <input name="Customer address" id="address" type="text" placeholder="Enter your email address"
-                                required>
+                            <input name="Customer address" id="address" type="text"
+                                placeholder="Enter your email address" required>
                             <textarea name="Details" rows="5" placeholder="Enter your message" required></textarea>
                             <button type="Send Massage" formaction="Message">Send Message</button>
                         </fieldset>
@@ -264,7 +396,8 @@
             </section>
             <section class="rights-social">
                 <section class="rights">
-                    <small class="create" >&copy; 2023 ALL RIGHTS RESERVED Design by <span class="highlight">Dilanka</span>.</small>
+                    <small class="create">&copy; 2023 ALL RIGHTS RESERVED Design by <span
+                            class="highlight">Dilanka</span>.</small>
                 </section>
                 <section class="social">
                     <div>
@@ -276,6 +409,12 @@
                     </div>
                 </section>
             </section>
+        </div>
+        <div class="csection-line">
+            <img class="csline" src="assets/images/Sline.svg" alt="This is a gif image">
+        </div>
+        <div class="crtitle-line">
+            <img class="crline" src="assets/images/Rline.svg" alt="This is a gif image">
         </div>
     </footer>
 

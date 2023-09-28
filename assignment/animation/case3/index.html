@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Case 1</title>
+  <base href="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="normalize.css">
+  <style>
+
+    section{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 600px;
+      height: 300px;
+      border: 2px solid #A93226;
+      /* overflow:hidden; */
+    }
+    .slider{
+      width: 400%;
+      height: 100%;
+      display: flex;
+      position: relative;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-name: ani;
+      animation-direction: alternate;
+    }
+    .slider>div{
+      flex: 1;
+      max-width: calc(100%/4);
+      height: 100%;
+    }
+    @keyframes ani {
+      0%{
+        right: 0%;
+      }
+      25%{
+        right: 100%;
+      }
+      50%{
+        right: 200%;
+      }
+      75%{
+        right: 300%;
+      }
+      100%{
+        right: 300%;
+      }
+
+    }
+  </style>
+</head>
+<body>
+<section>
+  <div class="slider">
+  <div><img src="images/img1.jpg"  width="100%" height="100%"></div>
+  <div><img src="images/img2.jpg"  width="100%" height="100%"></div>
+  <div><img src="images/img3.jpg"  width="100%" height="100%"></div>
+  <div><img src="images/img4.jpg"  width="100%" height="100%"></div>
+  </div>
+</section>
+</body>
+</html>

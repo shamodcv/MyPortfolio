@@ -1,7 +1,29 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
+    position: relative;
+    transition: all 0.5s;
+    height: 100vh;
 }
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #272525;
+}
+::-webkit-scrollbar-thumb {
+    background: #D50E44;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 
 header {
     position: fixed;
@@ -27,7 +49,6 @@ header {
 
 .line {
     position: relative;
-    font-family: 'Staatliches', sans-serif;
     font-size: 90%;
     height: 45vh;
     width: auto;
@@ -37,7 +58,7 @@ header {
 
 .line>ul :hover {
     color: red;
-    transition: 90ms;
+    transition: 800ms;
 }
 
 .line ul {
@@ -61,7 +82,7 @@ header {
 .line a {
     text-decoration: none;
     font-size: 100%;
-    color: #333;
+    color: #ffffff;
 }
 
 .home {
@@ -114,7 +135,7 @@ header {
     top: 30%;
     bottom: 0%;
     color: #ffffff;
-    right: 10%;
+    right: 9.5%;
 }
 
 .title {
@@ -158,8 +179,8 @@ header {
     display: flex;
     /* align-items: baseline; */
     /* gap: 10px; */
-    top: 25%;
-    left: 97px;
+    top: 26%;
+    left: 98px;
     background-color: #D50E44;
     color: #fff;
     font-size: 15px;
@@ -172,14 +193,29 @@ header {
 
 }
 
-/* .section-line {
-            border:1px solid #ddd;
-            margin: 1px;
-            position: relative;
-            display: flex;
-            top: 15%;
-           
-        } */
+.probutton:hover {
+    background-color: #fff;
+    color: #D50E44;
+    transition: 800ms;
+}
+
+.probutton a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.section-line {
+    position: absolute;
+    margin: auto;
+    left: 100px;
+    bottom: 0vh;
+
+}
+
+.sline {
+    width: 1295px;
+}
 
 /* section2 */
 .about {
@@ -200,7 +236,7 @@ header {
     top: 10vh;
     bottom: 0%;
     color: #ffffff;
-    left: 27%;
+    left: 26%;
 }
 
 .know {
@@ -241,7 +277,7 @@ header {
 
 .abimg {
     position: absolute;
-    top: -28vh;
+    top: -20vh;
     bottom: 0%;
     margin: auto;
     left: 6.5%;
@@ -251,7 +287,7 @@ header {
 
 .abimg1 {
     position: absolute;
-    top: -14vh;
+    top: -8vh;
     bottom: 0%;
     margin: auto;
     left: 12.5%;
@@ -261,13 +297,26 @@ header {
 
 .abimg2 {
     position: absolute;
-    top: -25vh;
+    top: -18vh;
     bottom: 0%;
     margin: auto;
     left: 9.5%;
     max-width: 300px;
     height: 400px;
 }
+
+.abtitle-line {
+    position: absolute;
+    margin: auto;
+    left: 760px;
+    top: 14vh;
+
+}
+
+.abrline {
+    width: 150px;
+}
+
 
 /* section3 */
 .education {
@@ -280,26 +329,35 @@ header {
     left: 0%;
     right: 0%;
     bottom: 0%;
-    /* opacity: 0;
-            animation: fadeIn 4s ease-in-out forwards;  */
 }
 
-/* @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 40;
-            }
-        } */
+
 .edutitle {
     position: relative;
     font-size: 25px;
     top: 10vh;
-    left: 690px;
+    left: 685px;
     margin: auto;
     color: #ffffff;
     font-weight: lighter;
+}
+
+.etitle-line {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    left: 508px;
+    top: 12vh;
+
+}
+
+.erline1,
+.erline2 {
+    width: 150px;
+}
+
+.erline2 {
+    margin-left: 200px;
 }
 
 .chart {
@@ -362,45 +420,95 @@ header {
     position: relative;
     font-size: 25px;
     top: 10vh;
-    left: 720px;
+    left: 715px;
     margin: auto;
     color: #ffffff;
     font-weight: lighter;
 }
 
-/* Add overflow-x property to enable horizontal scrolling */
+.stitle-line {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    left: 508px;
+    top: 12vh;
+
+}
+
+.srline1,
+.srline2 {
+    width: 150px;
+}
+
+.srline2 {
+    margin-left: 200px;
+}
+
 .skslide-wrapper {
-    overflow-x: hidden;
-    /* Hide horizontal overflow */
-    padding-left: 7%;
-    /* Adjust the left padding as needed */
-    padding-right: 7%;
-    /* Adjust the right padding as needed */
-    position: relative;
-    top: 35vh;
+    overflow: hidden;
+    width: 1300px;
+    height: 250px;
 }
 
 .skslide {
-    overflow-x: auto;
-    white-space: nowrap;
-    /* Prevents the items from wrapping to the next line */
     display: flex;
-    /* Use flexbox for horizontal layout */
-    padding: 10px 0;
-    /* Add some padding for spacing */
+    animation: slide 10s infinite linear;
+    animation-direction: alternate;
 }
 
-/* Style the individual skill items */
-.sitem {
-    flex: 0 0 auto;
-    /* Prevent items from growing or shrinking */
-    width: 150px;
-    /* Set the width of each skill item */
-    margin-right: 20px;
-    /* Add some margin between items */
-    text-align: center;
-    /* Center the content horizontally */
+.skslide:hover {
+    animation-play-state: paused;
 }
+
+.sitem {
+    flex: 0 0 150px;
+    padding: 0 10px;
+    margin-right: 20px;
+    box-sizing: content-box;
+}
+
+.simg {
+    width: 100%;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-85%);
+    }
+}
+
+.site {
+    position: absolute;
+    margin: auto;
+    left: 100px;
+    top: 40vh;
+}
+
+.sitem {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.simg {
+    width: 150px;
+    transition: transform 1s;
+}
+
+.simg:hover {
+    transform: translateZ(10px);
+}
+
+
 
 
 /* section5 */
@@ -416,11 +524,35 @@ header {
     bottom: 0%;
 }
 
+.ptitle-line {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    left: 508px;
+    top: 12vh;
+
+}
+
+.prline1,
+.prline2 {
+    width: 150px;
+}
+
+.prline2 {
+    margin-left: 200px;
+}
+
+.skslide-wrapper {
+    overflow: hidden;
+    width: 1300px;
+    height: 250px;
+}
+
 .projecttitle {
     position: absolute;
     font-size: 25px;
     top: 10vh;
-    left: 700px;
+    left: 690px;
     margin: auto;
     color: #ffffff;
     font-weight: lighter;
@@ -428,11 +560,8 @@ header {
 
 .proslide-wrapper {
     overflow-x: hidden;
-    /* Hide horizontal overflow */
     padding-left: 7%;
-    /* Adjust the left padding as needed */
     padding-right: 7%;
-    /* Adjust the right padding as needed */
     position: relative;
     top: 30vh;
 }
@@ -440,22 +569,15 @@ header {
 .proslide {
     overflow-x: auto;
     white-space: nowrap;
-    /* Prevents the items from wrapping to the next line */
     display: flex;
-    /* Use flexbox for horizontal layout */
     padding: 10px 0;
-    /* Add some padding for spacing */
 }
 
 .pitem {
     flex: 0 0 auto;
-    /* Prevent items from growing or shrinking */
     width: 500px;
-    /* Set the width of each skill item */
     margin-right: 20px;
-    /* Add some margin between items */
     text-align: center;
-    /* Center the content horizontally */
 
     height: 320px;
     background: rgba(155, 155, 155, 0.25);
@@ -464,6 +586,55 @@ header {
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.pimg {
+    width: 500px;
+    height: 320px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.ve {
+    text-decoration: none;
+    color: #181515;
+}
+.ve:hover{
+    color: #D50E44;
+}
+
+.ho:hover .ve {
+    font-size: 32px;
+}
+
+.ho {
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transition: height 0.5s;
+    border-radius: 10px;
+    background: rgba(189, 195, 199, 0.35);
+    overflow: hidden;
+
+}
+
+.pitem:hover .ho {
+    height: 100%;
+}
+
+
+#h1 {
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    font-size: 32px;
+    position: relative;
+    right: 0%;
+    top: 15vh;
+    
+
 }
 
 /* section6 */
@@ -483,10 +654,28 @@ header {
     position: absolute;
     font-size: 25px;
     top: 10vh;
-    left: 680px;
+    left: 677px;
     margin: auto;
     color: #ffffff;
     font-weight: lighter;
+}
+
+.astitle-line {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    left: 508px;
+    top: 12vh;
+
+}
+
+.asrline1,
+.asrline2 {
+    width: 150px;
+}
+
+.asrline2 {
+    margin-left: 200px;
 }
 
 .assigment-wrapper {
@@ -519,6 +708,53 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.asimg {
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.aslink {
+    text-decoration: none;
+    color: #181515;
+}
+.aslink:hover{
+    color: #D50E44;
+}
+
+.asho:hover .aslink {
+    font-size: 32px;
+}
+
+.asho {
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transition: height 0.5s;
+    border-radius: 10px;
+    background: rgba(189, 195, 199, 0.35);
+    overflow: hidden;
+
+}
+
+.asgitem:hover .asho {
+    height: 100%;
+}
+
+#ash1 {
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    font-size: 32px;
+    position: relative;
+    right: 0%;
+    top: 15vh;
+
+}
+
 /* section7 */
 .gallery {
     position: absolute;
@@ -536,34 +772,75 @@ header {
     position: absolute;
     font-size: 25px;
     top: 10vh;
-    left: 680px;
+    left: 700px;
     margin: auto;
     color: #ffffff;
     font-weight: lighter;
 }
 
-.galleryset {
-   
-    top: 48vh;
-    bottom: 0%;
+.gatitle-line {
+    position: absolute;
     margin: auto;
-    left: 6.5%;
-    /* max-width: 400px;
-    height: 400px;  */
     display: flex;
+    left: 508px;
+    top: 12vh;
+
 }
 
-/* .footer{
-            position: absolute;
-            background-color: #262323;
-            height: 100vh;
-            width: 100%;
-            display: block;
-            top: 600%;
-            left: 0%;
-            right: 0%;
-            bottom: 0%; 
-        } */
+.garline1,
+.garline2 {
+    width: 150px;
+}
+
+.garline2 {
+    margin-left: 200px;
+}
+
+.gallery-wrapper {
+    overflow: hidden;
+    width: 1300px;
+    height: 450px;
+}
+
+.gallery-slideshow {
+    display: flex;
+    animation: slide 10s infinite linear;
+    animation-direction: alternate;
+}
+
+.gaitem {
+    flex: 0 0 150px;
+    padding: 0 10px;
+    margin-right: 180px;
+    box-sizing: content-box;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-85%);
+    }
+}
+
+.gasite {
+    position: absolute;
+    margin: auto;
+    left: 100px;
+    top: 20vh;
+}
+
+.gaitem {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px
+}
+
 footer {
     position: absolute;
     background-color: #262323;
@@ -575,14 +852,6 @@ footer {
     right: 0%;
     bottom: 0%;
 }
-
-/* .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-} */
 
 .contact,
 .contact-form,
@@ -625,7 +894,8 @@ fieldset {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
 }
 
 .contact-form button:hover {
@@ -729,13 +999,8 @@ textarea {
     height: 10vh;
     background-color: #181515;
     display: flex;
-    /* Use flexbox to control the layout */
     justify-content: space-between;
-    /* Align the elements to the start and end */
     align-items: center;
-    /* Center vertically within the container */
-
-
 }
 
 .social {
@@ -747,3 +1012,25 @@ textarea {
 
 }
 
+.csection-line {
+    position: absolute;
+    margin: auto;
+    left: 100px;
+    bottom: 25vh;
+
+}
+
+.csline {
+    width: 1295px;
+}
+.crtitle-line {
+    position: absolute;
+    margin: auto;
+    left: 240px;
+    top: 9.5vh;
+
+}
+
+.crline {
+    width: 150px;
+}
