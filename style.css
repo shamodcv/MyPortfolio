@@ -101,6 +101,14 @@ header {
     max-width: 400px;
     height: 400px;
 }
+.pro1{
+    width: 420px;
+}
+.pro2{
+    width: 420px;
+}.pro3{
+    width: 420px;
+}
 
 .proimg1 {
     position: absolute;
@@ -153,8 +161,6 @@ header {
 .Nameline {
     position: relative;
     display: flex;
-    /* align-items: baseline; */
-    /* gap: 10px; */
     top: 32%;
     left: 98px;
     font-size: 50px;
@@ -177,8 +183,6 @@ header {
 .probutton {
     position: relative;
     display: flex;
-    /* align-items: baseline; */
-    /* gap: 10px; */
     top: 26%;
     left: 98px;
     background-color: #D50E44;
@@ -217,7 +221,7 @@ header {
     width: 1295px;
 }
 
-/* section2 */
+ /* -------------------------------section2---------------------------- */
 .about {
     position: absolute;
     background-color: #262323;
@@ -287,7 +291,7 @@ header {
 
 .abimg1 {
     position: absolute;
-    top: -8vh;
+    top: -30vh;
     bottom: 0%;
     margin: auto;
     left: 12.5%;
@@ -297,12 +301,21 @@ header {
 
 .abimg2 {
     position: absolute;
-    top: -18vh;
+    top: -45vh;
     bottom: 0%;
     margin: auto;
     left: 9.5%;
     max-width: 300px;
     height: 400px;
+}
+.ab1{
+    width: 320px;
+}
+.ab2{
+    width: 370px;
+}
+.ab3{
+    width: 370px;
 }
 
 .abtitle-line {
@@ -318,7 +331,7 @@ header {
 }
 
 
-/* section3 */
+ /* -------------------------------section3---------------------------- */
 .education {
     position: absolute;
     background-color: #262323;
@@ -369,6 +382,9 @@ header {
     max-width: 300px;
     height: 400px;
 }
+.chartimg{
+    width: 1000px ;
+}
 
 .edu1 {
     position: relative;
@@ -403,7 +419,7 @@ header {
     color: #bcb6b6;
 }
 
-/* section4 */
+ /* -------------------------------section4---------------------------- */
 .skills {
     position: absolute;
     background-color: #262323;
@@ -511,7 +527,7 @@ header {
 
 
 
-/* section5 */
+ /* -------------------------------section5---------------------------- */
 .project {
     position: absolute;
     background-color: #262323;
@@ -616,7 +632,7 @@ header {
     margin: auto;
     transition: height 0.5s;
     border-radius: 10px;
-    background: rgba(189, 195, 199, 0.35);
+    background: rgba(189, 195, 199, 0.386);
     overflow: hidden;
 
 }
@@ -637,7 +653,7 @@ header {
 
 }
 
-/* section6 */
+ /* -------------------------------section6---------------------------- */
 .assigment {
     position: absolute;
     background-color: #262323;
@@ -755,7 +771,7 @@ header {
 
 }
 
-/* section7 */
+ /* -------------------------------section7---------------------------- */
 .gallery {
     position: absolute;
     background-color: #262323;
@@ -840,7 +856,7 @@ header {
     padding: 15px;
     perspective: 100px
 }
-
+ /* -------------------------------section8---------------------------- */
 footer {
     position: absolute;
     background-color: #262323;
@@ -957,9 +973,9 @@ textarea {
     top: 25vh;
     /* bottom: 0%; */
     color: #ffffff;
-    left: -6.5%;
+    left: 6.5%;
     margin: auto;
-    padding-right: 10%;
+    padding-right: 7%;
 }
 
 .contact-form {

@@ -1,0 +1,570 @@
+@media all and (max-width: 426px) {
+    .logo {
+        max-width: 30px;
+        height: 30px;
+    }
+
+
+    .line {
+        position: relative;
+        font-size: 40%;
+        height: 45vh;
+        width: auto;
+        left: 10%;
+        color: white;
+    }
+
+    .line ul {
+        position: absolute;
+        list-style: none;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        top: 5px;
+    }
+
+    .line li {
+        position: relative;
+        margin-right: 35px;
+        top: 10px
+    }
+
+    .proimg {
+        top: -37%;
+        right: 20%;
+        max-width: 200px;
+        height: 200px;
+    }
+
+    .proimg1 {
+        top: -48%;
+        right: 12%;
+        max-width: 200px;
+        height: 200px;
+    }
+
+    .proimg2 {
+        top: -25%;
+        right: 30%;
+        max-width: 200px;
+        height: 200px;
+    }
+
+    .pro1 {
+        width: 200px;
+    }
+
+    .pro2 {
+        width: 200px;
+    }
+
+    .pro3 {
+        width: 200px;
+    }
+
+
+    .Hello {
+        position: relative;
+        font-size: 300%;
+        top: -75px;
+    }
+
+    .paragraph1 {
+        font-size: 10px;
+        top: 60%;
+        bottom: 0%;
+        right: 16.5%;
+    }
+
+    .title {
+        font-size: 20px;
+        top: 60%;
+        left: 40px;
+    }
+
+    .Nameline {
+        top: 60%;
+        left: 40px;
+        font-size: 15px;
+    }
+
+    .greeting {
+        top: 60%;
+        left: 40px;
+        font-size: 10px;
+    }
+
+    .probutton {
+        top: 60%;
+        left: 42px;
+        font-size: 10px;
+
+    }
+
+    .section-line {
+        left: 40px;
+    }
+
+    .sline {
+        width: 345px;
+    }
+
+    /* -------------------------------section2---------------------------- */
+    
+    .paragraph2 {
+        font-size: 10px;
+        top: 47vh;
+        left: -16%;
+    }
+
+    .know {
+        font-size: 15px;
+        top: 50vh;
+        left: 45px;
+    }
+
+    .know1 {
+        font-size: 20px;
+        top: 48vh;
+        left: 44px;
+    }
+
+    .know2 {
+        font-size: 20px;
+        top: 46vh;
+        left: 45px;
+    }
+
+    .abimg {
+        top: -24vh;
+        left: 10%;
+    }
+
+    .abimg1 {
+        top: -45.5vh;
+        left: 13.5%
+    }
+
+    .abimg2 {
+        top: -40vh;
+        left: 17.5%;
+    }
+
+    .ab1 {
+        width: 170px;
+    }
+
+    .ab2 {
+        width: 200px;
+    }
+
+    .ab3 {
+        width: 200px;
+    }
+
+    .abtitle-line {
+        position: absolute;
+        margin: auto;
+        left: 125px;
+        top: 52vh;
+
+    }
+
+    .abrline {
+        width: 110px;
+    }
+
+
+     /* -------------------------------section3---------------------------- */
+    .edutitle {
+        font-size: 12px;
+        top: 3vh;
+        left: 178px;
+    }
+
+    .etitle-line {
+        left: 52px;
+        top: 4vh;
+
+    }
+
+    .erline1,
+    .erline2 {
+        width: 110px;
+    }
+
+    .erline2 {
+        margin-left: 100px;
+    }
+
+    .chart {
+        top: 50vh;
+        left: 18%;
+    }
+
+    .chartimg {
+        width: 300px;
+    }
+
+    .edu1 {
+        font-size: 7px;
+        top: 48vh;
+        left: 54px;
+
+    }
+
+    .edu2 {
+        font-size: 7px;
+        top: 32vh;
+        left: 130px;
+    }
+
+    .edu3 {
+        font-size: 6px;
+        top: 44vh;
+        left: 236px;
+    }
+
+    .edu4 {
+        font-size: 7px;
+        top: 44vh;
+        left: 236px;
+    }
+
+    /* -------------------------------section4---------------------------- */
+    .skilltitle {
+        font-size: 12px;
+        top: 3vh;
+        left: 193px;
+    }
+
+    .stitle-line {
+        left: 52px;
+        top: 4vh;
+
+    }
+
+    .srline1,
+    .srline2 {
+        width: 110px;
+    }
+
+    .srline2 {
+        margin-left: 100px;
+    }
+
+    .skslide-wrapper {
+        overflow: hidden;
+        width: 1300px;
+        height: 250px;
+    }
+
+    .skslide {
+        display: flex;
+        animation: slide 10s infinite linear;
+        animation-direction: alternate;
+    }
+
+    .skslide:hover {
+        animation-play-state: paused;
+    }
+
+    .sitem {
+        flex: 0 0 150px;
+        padding: 0 10px;
+        margin-right: 20px;
+        box-sizing: content-box;
+    }
+
+    .simg {
+        width: 100%;
+        border: 2px solid transparent;
+        transition: border-color 0.3s ease;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-85%);
+        }
+    }
+
+    .site {
+        position: absolute;
+        margin: auto;
+        left: 42px;
+        top: 40vh;
+    }
+
+    .sitem {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        perspective: 100px;
+    }
+
+    .simg {
+        width: 100px;
+        transition: transform 1s;
+    }
+
+    .simg:hover {
+        transform: translateZ(10px);
+    }
+
+
+
+
+     /* -------------------------------section5---------------------------- */
+    .ptitle-line {
+        left: 52px;
+        top: 4vh;
+
+    }
+
+    .prline1,
+    .prline2 {
+        width: 110px;
+    }
+
+    .prline2 {
+        margin-left: 100px;
+    }
+
+    .projecttitle {
+        font-size: 12px;
+        top: 3vh;
+        left: 178px;
+    }
+
+    .pitem {
+        width: 250px;
+        height: 244px;
+    }
+
+
+    /* -------------------------------section6---------------------------- */
+    .assigmenttitle {
+        font-size: 12px;
+        top: 3vh;
+        left: 174px;
+    }
+
+    .astitle-line {
+        left: 52px;
+        top: 4vh;
+
+    }
+
+    .asrline1,
+    .asrline2 {
+        width: 110px;
+    }
+
+    .asrline2 {
+        margin-left: 100px;
+    }
+
+    .asgitem {
+        width: 250px;
+        height: 244px;
+    }
+
+    .asimg {
+        width: 250px;
+        height: 244px;
+    }
+
+    /* -------------------------------section7---------------------------- */
+    .gallerytitle {
+        font-size: 12px;
+        top: 3vh;
+        left: 187px;
+    }
+
+    .gatitle-line {
+        left: 52px;
+        top: 4vh;
+
+    }
+
+    .garline1,
+    .garline2 {
+        width: 110px;
+    }
+
+    .garline2 {
+        margin-left: 100px;
+    }
+
+    .gallery-wrapper {
+        overflow: hidden;
+        width: 1300px;
+        height: 450px;
+    }
+
+    .gallery-slideshow {
+        display: flex;
+        animation: slide 10s infinite linear;
+        animation-direction: alternate;
+    }
+
+    .gaitem {
+        flex: 0 0 150px;
+        padding: 0 10px;
+        margin-right: 180px;
+        box-sizing: content-box;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-85%);
+        }
+    }
+
+    .gasite {
+        position: absolute;
+        margin: auto;
+        left: 40px;
+        top: 20vh;
+    }
+
+    .gaitem {
+        width: 250px;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        perspective: 100px
+    }
+
+     /* -------------------------------section8---------------------------- */
+    .contact,
+    .contact-form,
+    .rights-social {
+        flex: 1;
+        margin: 20px;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .contact-form form {
+        margin-top: 20px;
+    }
+
+    .fieldset {
+        padding-left: 7%;
+        padding-right: 7%;
+
+    }
+
+    fieldset {
+        border: 2px solid #323030;
+        border: none;
+
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 315px;
+        font-size: 10px;
+
+    }
+
+    .contact-form button {
+        width: 120px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .rights-social .social {
+        text-align: center;
+
+    }
+
+    .rights-social .social a {
+        margin: 0 2px;
+        text-decoration: none;
+    }
+
+    .rights-social .social img {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .contacttitle {
+        font-size: 10px;
+        top: 10vh;
+        left: 45px;
+    }
+
+    .gettitle {
+        font-size: 25px;
+        top: 15vh;
+        left: 45px;
+    }
+
+    .paragraph3 {
+        font-size: 10px;
+        top: 20vh;
+        left: 11.5%;
+        padding-right: 10%;
+    }
+
+    .contact-form {
+        top: 30vh;
+        left: -8%;
+    }
+
+    .rights {
+        font-size: 10px;
+    }
+
+    .rights-social {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 10vh;
+        background-color: #181515;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .social {
+        left: 260px;
+
+    }
+
+    .csection-line {
+        left: 40px;
+        bottom: 25vh;
+    }
+
+    .csline {
+        width: 350px;
+    }
+
+    .crtitle-line {
+        left: 130px;
+        top: 8.5vh;
+    }
+
+    .crline {
+        width: 110px;
+    }
+
+}
